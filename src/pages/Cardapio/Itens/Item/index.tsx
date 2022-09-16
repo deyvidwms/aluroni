@@ -1,4 +1,4 @@
-import cardapio from '../itens.json';
+import cardapio from 'data/cardapio.json';
 import styles from './Item.module.scss';
 import classNames from 'classnames';
 
