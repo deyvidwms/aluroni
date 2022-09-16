@@ -4,9 +4,6 @@ import Filtros from './Filtros';
 import Ordenador from './Ordenador';
 import Itens from './Itens';
 
-// transforma o svg em um componente
-import { ReactComponent as Logo } from 'assets/logo.svg';
-
 import styles from './Cardapio.module.scss';
 
 
@@ -17,9 +14,6 @@ export default function Cardapio () {
 
   return (
     <main>
-      <nav className={styles.menu}>
-        <Logo />
-      </nav>
       <header className={styles.header}>
         <div className={styles.header__text}>
           A cada do código e da massa
