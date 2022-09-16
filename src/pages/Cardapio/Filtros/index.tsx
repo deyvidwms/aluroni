@@ -39,5 +39,5 @@ export default function Filtros({ filtro, setFiltro }: Props) {
         </button>
       ))}
     </div>
-  )
+  );
 }

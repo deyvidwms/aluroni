@@ -11,7 +11,7 @@ interface Props {
 }
 
 export default function Itens(props: Props) {
-  const [lista, setLista] = useState(cardapio)
+  const [lista, setLista] = useState(cardapio);
   const { busca, filtro, ordenador } = props;
   
   function testaBusca(title: string) {
@@ -33,14 +33,14 @@ export default function Itens(props: Props) {
 
   function ordenar(novaLista: typeof cardapio) {
     switch(ordenador) {
-      case 'porcao':
-        return ordenarPropriedadeCrescente(novaLista, 'size')
-      case 'qtd_pessoas':
-        return ordenarPropriedadeCrescente(novaLista, 'serving')
-      case 'preco':
-        return ordenarPropriedadeCrescente(novaLista, 'price')
-      default:
-        return novaLista;
+    case 'porcao':
+      return ordenarPropriedadeCrescente(novaLista, 'size');
+    case 'qtd_pessoas':
+      return ordenarPropriedadeCrescente(novaLista, 'serving');
+    case 'preco':
+      return ordenarPropriedadeCrescente(novaLista, 'price');
+    default:
+      return novaLista;
     }
   }
 
@@ -58,5 +58,5 @@ export default function Itens(props: Props) {
         />
       )) }
     </div>
-  )
+  );
 }
