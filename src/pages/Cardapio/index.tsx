@@ -5,7 +5,7 @@ import Ordenador from './Ordenador';
 import Itens from './Itens';
 
 import styles from './Cardapio.module.scss';
-
+import stylesTema from 'styles/Tema.module.scss';
 
 export default function Cardapio () {
   const [busca, setBusca] = useState('');
@@ -14,7 +14,7 @@ export default function Cardapio () {
 
   return (
     <section className={styles.cardapio}>
-      <h3 className={styles.cardapio__titulo}>Cardapio</h3>
+      <h3 className={stylesTema.titulo}>Cardapio</h3>
       <Buscador 
         busca={busca} 
         setBusca={setBusca} 
